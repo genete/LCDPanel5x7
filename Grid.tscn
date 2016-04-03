@@ -9,6 +9,7 @@
 
 margin/right = 2438.0
 margin/bottom = 3840.0
+rect/scale = Vector2( 0.0133333, 0.0133333 )
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2

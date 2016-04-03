@@ -5,17 +5,17 @@ const led_size=480
 const grid_width=5
 const grid_height=7
 
-export var grid_width_pixels=32
+export var grid_width_pixels=32 setget set_grid_width
 
-
-# member variables here, example:
-# var a=2
-# var b="textvar"
-
-func _ready():
+func set_grid_width(new_width):
+	grid_width_pixels=new_width
 	var grid_scale=float(grid_width_pixels)/grid_width/led_size
 	set_scale(Vector2(grid_scale, grid_scale))
-	parse_number(1)
+	
+
+func _ready():
+	set_grid_width(24)
+	parse_number(0)
 	pass
 
 func parse_number(var n):
