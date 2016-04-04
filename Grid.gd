@@ -14,7 +14,7 @@ func set_grid_width(new_width):
 	
 
 func _ready():
-	set_grid_width(24)
+	set_grid_width(128)
 	parse_number(0)
 	pass
 
@@ -33,3 +33,9 @@ func parse_number(var n):
 				led.led_off()
 			col=col+1
 		row=row+1
+
+func invert():
+	for c in range(grid_width):
+		for r in range(grid_height):
+			var led=get_node("slot"+str(r)+str(c))
+			led.invert=true
