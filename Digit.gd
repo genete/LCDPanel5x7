@@ -8,14 +8,14 @@ const grid_height=7
 var grid_width_pixels=32
 
 func _ready():
-	parse_number(0)
+	parse_digit(0)
 
 func get_scale_for_width(var width_pixels):
 	var scale
 	scale=float(width_pixels)/led_size/grid_width
 	return scale
 
-func parse_number(var n):
+func parse_digit(var n):
 	var node=get_node("dictionary")
 	var dic=node.d
 	var array=dic[n]
