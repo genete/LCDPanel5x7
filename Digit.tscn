@@ -1,15 +1,14 @@
 [gd_scene load_steps=5 format=1]
 
-[ext_resource path="res://Grid.gd" type="Script" id=1]
+[ext_resource path="res://Digit.gd" type="Script" id=1]
 [ext_resource path="res://dictionary.gd" type="Script" id=2]
 [ext_resource path="res://slot.gd" type="Script" id=3]
 [ext_resource path="res://led.png" type="Texture" id=4]
 
 [node name="Digit" type="GridContainer"]
 
-margin/right = 2438.0
-margin/bottom = 3840.0
-rect/scale = Vector2( 0.0133333, 0.0133333 )
+margin/right = 2400.0
+margin/bottom = 3360.0
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
@@ -19,7 +18,6 @@ custom_constants/hseparation = 480
 columns = 5
 script/script = ExtResource( 1 )
 __meta__ = { "_editor_collapsed":true }
-grid_width_pixels = 32
 
 [node name="dictionary" type="Node" parent="."]
 
